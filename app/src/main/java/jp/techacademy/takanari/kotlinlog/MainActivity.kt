@@ -10,8 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //val dog = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
-        val human = Human("山本",22)
+        val dog = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
+        val human = Human("こみけ","山本",22)
+        val human2 = Human("車","田代",22)
+
 
         //dog.say()
         //Log.d("kotlintest", "犬の名前は" + dog.name + "です。")
@@ -26,9 +28,14 @@ class MainActivity : AppCompatActivity() {
         //dog.move()
 
         human.say()
-        Log.d("kotlintest", "私の名前は" + human.name + "です。年は" + human.age + "歳です。（〜〜はメンバ変数から取得）")
+        //Log.d("kotlintest", "私の名前は" + human.name + "です。年は" + human.age + "歳です。（〜〜はメンバ変数から取得）")
 
-//        human.think()
+        human.think()
+
+        human2.say()
+        //Log.d("kotlintest", "私の名前は" + human.name + "です。年は" + human.age + "歳です。（〜〜はメンバ変数から取得）")
+
+        human2.think()
 
 
 
